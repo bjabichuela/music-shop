@@ -26,6 +26,7 @@ import {
   USER_UPDATE_REQUEST,
 } from '../constants/userConstants'
 import { ORDER_LIST_MY_RESET } from '../constants/orderConstants'
+import Swal from 'sweetalert2'
 
 export const login = (email, password) => async (dispatch) => {
   try {
@@ -58,6 +59,10 @@ export const login = (email, password) => async (dispatch) => {
         error.response && error.response.data.message
           ? error.response.data.message
           : error.message,
+    })
+    Swal.fire({
+      text: 'Something is wrong with your credentials. Please try again.',
+      icon: 'error'
     })
   }
 }
@@ -110,6 +115,10 @@ export const register = (name, email, password) => async (dispatch) => {
         error.response && error.response.data.message
           ? error.response.data.message
           : error.message,
+    })
+    Swal.fire({
+      text: 'Something is wrong with your credentials. Please try again.',
+      icon: 'error'
     })
   }
 }
