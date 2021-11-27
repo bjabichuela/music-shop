@@ -117,6 +117,7 @@ const ProductScreen = ({ history, match }) => {
                         <Col>Qty</Col>
                         <Col>
                           <Form.Control
+                            className='text-center'
                             as='select'
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}
@@ -137,7 +138,7 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item className='d-grid gap-2'>
                     <Button
                       onClick={addToCartHandler}
-                      className='btn-dark'
+                      className='btn btn-secondary'
                       type='button'
                       disabled={product.countInStock === 0}
                     >

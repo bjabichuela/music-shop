@@ -151,7 +151,7 @@ const PlaceOrderScreen = ({ history }) => {
               <ListGroup.Item className='d-grid gap-2'>
                 <Button
                   type='button'
-                  className='btn-dark'
+                  className='btn-secondary'
                   disabled={cart.cartItems === 0}
                   onClick={placeOrderHandler}
                 >

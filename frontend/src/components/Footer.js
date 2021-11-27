@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 const Footer = () => {
     return (
         <footer>
-            <Container>
+            <Container className="footer">
                 <Row>
                     <Col className='text-center' py-3='true' style={{ fontSize: 15 }}>
                         Copyright &copy; 2021 | Built by John Abichuela

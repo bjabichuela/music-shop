@@ -37,7 +37,7 @@ const PaymentScreen = ({ history }) => {
               id='PayPal'
               name='paymentMethod'
               value='PayPal'
-              variant='dark'
+              variant='secondary'
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></Form.Check>
@@ -51,7 +51,7 @@ const PaymentScreen = ({ history }) => {
             ></Form.Check> */}
           </Col>
         </Form.Group>
-        <Button className='mt-3 mb-5 btn-dark' type='submit'>
+        <Button className='mt-3 mb-5 btn-secondary' type='submit'>
           Continue
         </Button>
       </Form>

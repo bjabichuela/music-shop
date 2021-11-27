@@ -12,7 +12,7 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Welcome To The Music Shop',
+  title: 'MusicZone',
   description: 'We sell the best products for cheap price',
   keywords: 'music, sound, buy earphone, cheap earphones',
 }

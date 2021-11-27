@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { GiMusicSpell } from 'react-icons/gi'
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
 
@@ -18,10 +19,10 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='secondary' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand><i class="fas fa-headphones"> Music Shop</i></Navbar.Brand>
+            <Navbar.Brand><GiMusicSpell /> MusicZone</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

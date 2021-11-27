@@ -38,9 +38,9 @@ const RegisterScreen = ({ location, history }) => {
 
   return (
     <FormContainer>
-      <h1 className='mt-2'>Sign Up</h1>
-      {message && <Message variant='danger'>{message}</Message>}
-      {error && <Message variant='danger'>{error}</Message>}
+      <h1 className='text-center mt-2'>Sign Up</h1>
+      {message && <Message variant='secondary'>{message}</Message>}
+      {error && <Message variant='secondary'>{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId='name'>
@@ -82,14 +82,15 @@ const RegisterScreen = ({ location, history }) => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-
-        <Button className='mt-3' type='submit' variant='dark'>
+        <Form.Group className='text-center pt-4 d-grid gap-2'>
+        <Button className="py-2" type='submit' variant='secondary'>
           Register
         </Button>
+        </Form.Group>
       </Form>
 
-      <Row className='py-3'>
-        <Col>
+      <Row className='text-center'>
+        <Col className='py-4'>
           Have an account?{' '}
           <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
             Login

@@ -183,7 +183,7 @@ const ProductEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='dark'>
+            <Button type='submit' variant='btn-secondary'>
               Update
             </Button>
           </Form>
