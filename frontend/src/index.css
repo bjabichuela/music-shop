@@ -52,16 +52,16 @@ a:hover {
 }
 
 .carousel-caption h2 {
-  color: whitesmoke;
+  color: #0B0909;
 }
 
 .carousel img {
   height: 300px;
   padding: 30px;
-  margin: 40px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px;
+  /* border-radius: 50%; */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .carousel a {
   margin: 0 auto;

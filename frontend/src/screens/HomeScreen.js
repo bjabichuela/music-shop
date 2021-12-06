@@ -35,7 +35,7 @@ const HomeScreen = ({ match }) => {
           Go Back
         </Link> 
       )}
-      <h1>Our Products</h1>
+      <h1 className="text-center py-4">Our Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (
