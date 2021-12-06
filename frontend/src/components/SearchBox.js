@@ -21,7 +21,7 @@ const SearchBox = ({ history }) => {
         name='q'
         onChange={(e) => setKeyword(e.target.value)}
         placeholder='Search Products...'
-        className='me-sm-2 ml-3 px-5 my-3 my-sm-0'
+        className='me-sm-2 ml-3 my-3 my-sm-0'
       ></Form.Control>
       <Button bg="secondary" type='submit' variant='outline-light' className='mr-2-sm-2 my-3 my-sm-0'>
         Search
